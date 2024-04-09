@@ -1,5 +1,7 @@
 ---
-const { title, description, link, date } = Astro.props;
+import ImgRender from "./ImgRender.astro";
+
+const { title, description, link, date, imagen } = Astro.props;
 ---
 
 <div
@@ -15,6 +17,7 @@ const { title, description, link, date } = Astro.props;
 <p class="mb-4 text-base font-normal opacity-70 text-pretty">
   {description}
 </p>
+{imagen && imagen.map((img) => <ImgRender src={img} alt={title} />)}
 {
   link && (
     <a
