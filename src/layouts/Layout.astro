@@ -22,7 +22,7 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="py-4 px-4">
     <div
       class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
@@ -32,12 +32,19 @@ const { title, description } = Astro.props;
     </div>
   </body>
 </html>
+
 <style is:global>
   :root {
     color-scheme: light dark;
     --primary-color: #1a94da;
     --tw-bg-opacity: 1;
     background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   html {
     font-family:
@@ -56,15 +63,10 @@ const { title, description } = Astro.props;
   }
 
   body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
     color: var(--primary-color);
     scroll-behavior: smooth;
   }
 
 
-  @media (prefers-reduced-motion: reduce) {
-    scroll-behavior: auto;
-  }
+  
 </style>
