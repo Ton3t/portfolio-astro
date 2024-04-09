@@ -1,9 +1,60 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+import SocialPill from "../icons/SocialPill.astro";
+import GitHub from "../icons/GitHub.astro";
+import Instagram from "../icons/Instagram.astro";
+import Tonet from "../icons/Tonet.astro";
+import EmailIcon from "../icons/EmailIcon.astro";
+import Trabajos from "../components/Trabajos.astro";
+import ProyectosIcono from "../icons/ProyectosIcono.astro";
 ---
 
-<Layout title="Portfolio Tonet">
-	<main>
-	</main>
-</Layout>
+<Layout
+  title="Portfolio Tonet - Desarrollador y Programador web con 3 años de experiencia"
+  description="Contrata a Tonet para crear tu aplicación web o móvil. Desarrollador Web y Creador de contenido para la comunidad. Especializado en crear aplicaciones únicas."
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-20">
+      <Tonet />
+      <h1 class="text-xl lg:text-5xl sm:text-3xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+        Hey, soy Tonet <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="flex justify-center items-center gap-x-4"
+          ><Badge>Disponible para trabajar</Badge></a
+        >
+      </h1><h2 class="text-2xl opacity-70 max-w-[700px]">
+        <span class="opacity-60"> +3 años de experiencia </span>
+        . <span class="opacity-90"
+          >Desarrollador Web y Creador de contenido</span
+        >. <span class="opacity-50">De Alicante, España. </span><span
+          class="opacity-90"
+          >Especializado en desarrollar aplicaciones únicas.
+        </span>
+      </h2>
+      <nav class="flex gap-4 mt-4 flex-wrap">
+        <SocialPill href="https://github.com/Ton3t">
+          <GitHub class="size-4 lg:size-6" />GitHub
+        </SocialPill>
+        <SocialPill href="https://www.instagram.com/elton3t/">
+          <Instagram class="size-4 lg:size-6" />Instagram
+        </SocialPill>
+        <SocialPill href="#">
+          <EmailIcon class="size-4 lg:size-6" />elton3t@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
 
+    <SectionContainer id="proyectos" class="">
+      <h2 class="text-2xl font-semibold mb-7 flex gap-x-3 items-center">
+        <ProyectosIcono class="size-8" />
+        Proyectos
+      </h2>
+      <Trabajos />
+    </SectionContainer>
+
+
+  </main>
+</Layout>

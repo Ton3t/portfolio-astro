@@ -1,0 +1,42 @@
+---
+import TrabajosItem from "./TrabajosItem.astro";
+
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Aplicación con React Native",
+    description:
+      "Actualmente estoy desarrollando una aplicación para  desarrolladores donde tengamos todas las librerías en una sola página web.",
+    link: "https://github.com/Ton3t/snippets-manager-client",
+  },
+  {
+    date: "2024",
+    title: "Blog - React 18",
+    description:
+      "Este emocionante proyecto combina la potencia de React con la versatilidad de un blog, creando una experiencia interactiva y atractiva para nuestros lectores. Con un diseño moderno y responsive, nuestro blog ofrece una plataforma intuitiva para explorar una amplia gama de temas. Desde tecnología hasta arte, pasando por viajes y estilo de vida, nuestro contenido diverso y enriquecedor está diseñado para inspirar, informar y entretener. Únete a nosotros en este viaje digital mientras compartimos historias, ideas y conocimientos.",
+    link: "",
+  },
+  {
+    date: "2023",
+    title: "CRUD - CREAR - LEER - ACTUALIZAR - BORRAR",
+    description: "Un CRUD es una parte fundamental de muchas aplicaciones, ya que proporciona una forma intuitiva y eficiente de administrar y manipular datos. Puede implementarse en una variedad de contextos, como aplicaciones web, aplicaciones móviles, sistemas de gestión de contenido y mucho más, brindando a los usuarios la capacidad de realizar acciones básicas de gestión de datos de manera fácil y eficaz.",
+    link: "",
+  },
+  {
+    date: "2020 - 2022",
+    title: "Curso Programación",
+    description: "Realizo un curso de programación superior en el instituto Pere María Orts en Benidorm",
+    link: "",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4 py-2">
+        <TrabajosItem {...experiencie} id="exper" />
+      </li>
+    ))
+  }
+</ol>

@@ -1,0 +1,14 @@
+<a
+  href={Astro.props.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="rounded-full border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 lg:py-2 lg:px-4 text-xs lg:text:base transition hover:bg-white/10"
+>
+  <slot />
+</a>
+
+<style>
+  a {
+    background: #25304157;
+  }
+</style>
