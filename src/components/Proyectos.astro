@@ -1,5 +1,5 @@
 ---
-import TrabajosItem from "./TrabajosItem.astro";
+import ProyectosItem from "./ProyectosItem.astro";
 
 const EXPERIENCIE = [
   {
@@ -19,13 +19,15 @@ const EXPERIENCIE = [
   {
     date: "2023",
     title: "CRUD - CREAR - LEER - ACTUALIZAR - BORRAR",
-    description: "Un CRUD es una parte fundamental de muchas aplicaciones, ya que proporciona una forma intuitiva y eficiente de administrar y manipular datos. Puede implementarse en una variedad de contextos, como aplicaciones web, aplicaciones móviles, sistemas de gestión de contenido y mucho más, brindando a los usuarios la capacidad de realizar acciones básicas de gestión de datos de manera fácil y eficaz.",
+    description:
+      "Un CRUD es una parte fundamental de muchas aplicaciones, ya que proporciona una forma intuitiva y eficiente de administrar y manipular datos. Puede implementarse en una variedad de contextos, como aplicaciones web, aplicaciones móviles, sistemas de gestión de contenido y mucho más, brindando a los usuarios la capacidad de realizar acciones básicas de gestión de datos de manera fácil y eficaz.",
     link: "",
   },
   {
     date: "2020 - 2022",
     title: "Curso Programación",
-    description: "Realizo un curso de programación superior en el instituto Pere María Orts en Benidorm",
+    description:
+      "Realizo un curso de programación superior en el instituto Pere María Orts en Benidorm",
     link: "",
   },
 ];
@@ -35,7 +37,7 @@ const EXPERIENCIE = [
   {
     EXPERIENCIE.map((experiencie) => (
       <li class="mb-10 ms-4 py-2">
-        <TrabajosItem {...experiencie} id="exper" />
+        <ProyectosItem {...experiencie} id="exper" />
       </li>
     ))
   }
