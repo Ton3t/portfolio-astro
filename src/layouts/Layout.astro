@@ -34,6 +34,9 @@ const { title, description } = Astro.props;
 </html>
 
 <style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
   :root {
     color-scheme: light dark;
     --primary-color: #1a94da;
@@ -66,7 +69,4 @@ const { title, description } = Astro.props;
     color: var(--primary-color);
     scroll-behavior: smooth;
   }
-
-
-  
 </style>
